@@ -1,0 +1,132 @@
+
+
+@media (max-width: 450px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav--list {
+       position: absolute;
+       z-index: 1;
+       top: 65px;
+       left:0;
+       right: 0;
+       background:rgb(236, 139, 171);
+       border-radius: 0 0 0 0;
+       border-bottom: 1rem;
+       gap: 25px;
+       padding: 45px 30px;
+       width: 100%;
+       height: calc(100vh - 100%);
+
+    }
+
+    .nav_link a {
+        font-size: 18px;
+    }
+
+    .menu-label {
+        display: flex;
+        
+    }
+
+    .menu-icon {
+        
+        height: 20px;
+        width: 25px;
+    }
+
+    #menu-toggle:checked + .nav--list {
+        display: flex;
+        
+    }
+
+    .nav--list {
+        flex-direction: column ;
+        transform: translateX(110%);
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+    }
+
+    #menu-toggle:checked + .nav--list {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
+    #hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 500px;
+        gap: 1rem;
+        padding: 4rem 0;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.884);
+        
+    }
+    
+
+    .hero_info h1 {
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        width: auto;
+        height: auto;
+        
+        
+    }
+
+    .hero_info p{
+        font-size: 10px ;
+        text-align: center;
+        width: 150px;
+    }
+
+    .hero_info a {
+        
+        margin: 5px;
+        font-size: 12px;
+        width: 100px;
+    }
+
+    .container{
+        width: 200px;
+    }
+
+    #modelos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 500px;
+        gap: 1rem;
+        padding: 4rem 0;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.884);
+    }
+        
+    .slides-modelos{
+        width: 350px;
+    }
+
+    .hav1{
+        width: 250px;
+    }
+
+    .img {
+        width: 200px;
+    }
+   
+    #calidad{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 500px;
+        gap: 1rem;
+        padding: 4rem 0;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.884);
+    }
+}
